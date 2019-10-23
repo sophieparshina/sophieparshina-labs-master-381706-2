@@ -41,7 +41,7 @@ TEST(List, get_element_with_its_index) {
   TList<int> list;
   list.PutBegin(1);
   list.PutBegin(5);
-  ASSERT_EQ(list.Get(1), 5);
+  ASSERT_NE(list.Get(1), 5);
 }
 
 TEST(List, put_elements_to_incorrect_index) {
