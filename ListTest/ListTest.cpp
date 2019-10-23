@@ -93,11 +93,6 @@ TEST(List, check_if_list_is_not_empty) {
   ASSERT_FALSE(list.IsEmpty());
 }
 
-TEST(List, check_if_list_is_empty) {
-  TList<int> list;
-  ASSERT_FALSE(list.IsFull());
-}
-
 TEST(List, put_begin) {
   TList<int> list;
   ASSERT_NO_THROW(list.PutBegin(1));
