@@ -2,7 +2,6 @@
 #include <iostream>
 #include <locale.h>
 #include "List.h"
-#include "../../../Desktop/new_folder/sophieparshina-labs-381706-2/ListLib/List.h"
 
 using namespace std;
 
