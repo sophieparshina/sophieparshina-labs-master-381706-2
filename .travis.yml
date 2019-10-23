@@ -8,7 +8,7 @@ before_script:
 script:
   - cmake ../sophieparshina-labs-master-381706-2
   - make -j
-  - ./List/List
-  - ./ListTest/ListTest
+  - ./List
+  - ./ListTest
 notifications:
   email: false
