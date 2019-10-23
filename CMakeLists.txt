@@ -13,14 +13,9 @@ set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE) #С�
 if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компилятора вариантов сборки
   set(CMAKE_BUILD_TYPE Release) #Если нет то устанавливаем Release
 endif()
-
 file(GLOB hdrs "*.h*") #Добавляем в переменную hdrs все файлы с расширением .h
-file(GLOB srcs "*.cpp") #Добавляем в переменную srcs все файлы с расширением .h
+file(GLOB srcs "*.cpp") #Добавляем в переменную srcs все файлы с расширением .cpp
 
-
-#add_executable(${PROJECT_NAME} ${srcs} ${hdrs}) #Создаем проект с именем из переменной ${PROJECT_NAME}, в него добавляются файлы из переменных ${srcs} и ${hdrs}
-
-#${CMAKE_CURRENT_SOURCE_DIR}
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gtest)
 add_subdirectory(gtest)
 
@@ -30,6 +25,4 @@ add_subdirectory(ExceptionLib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ListLib)
 add_subdirectory(List)
 add_subdirectory(ListLib)
-add_subdirectory(ListTest)
-
-#target_link_libraries(${PROJECT_NAME} ${MyLib1}) #Подключаем к проекту с именем ${PROJECT_NAME} библиотеку с именем ${MyLib1}
+add_subdirectory(ListTest) 
