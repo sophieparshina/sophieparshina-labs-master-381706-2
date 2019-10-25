@@ -142,7 +142,7 @@ void TList<T>::PutBegin(T element) {
   count++;
 }
 
-//Метод, реализующий размещение элемента в начало списка
+//Метод, реализующий размещение элемента в конец списка
 template <class T>
 void TList<T>::PutEnd(T element) {
   if (this->IsFull())
