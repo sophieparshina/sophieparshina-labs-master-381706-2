@@ -10,5 +10,7 @@ script:
   - make -j
   - ./List/List
   - ./ListTest/ListTest
+  - ./Stack/Stack
+  - ./StackTest/StackTest
 notifications:
   email: false
